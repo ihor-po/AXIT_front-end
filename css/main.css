@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-Light";
+    src: url(../fonts/Raleway-Light.ttf);
+}
+body, html {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+.header, .footer, .section__modern {
+    background-color: #000000;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.header {
+    height: 4.375rem;
+}
+.footer {
+    height: 5rem;
+}
+.center-part {
+    width: 71rem;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+.center-part_space-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.center-part_column {
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+.center-part_center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.header__logo{
+    position: relative;
+}
+.header__logo__img{
+    position: absolute;
+    top: 30%;
+}
+.header__menu {
+    width: 29.375rem;
+    margin-right: 12px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+.header__menu__item {
+    width: 5.875rem;
+    text-align: center;
+}
+.header__menu__item__link {
+    color: #FFFFFF;
+    line-height: 4.375rem;
+    font-size: 0.875rem;
+    font-family: OpenSans, sans-serif;
+    text-decoration: none;
+    display: block;
+}
+.header__menu__item__link:hover{
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.footer__social {
+    display: -webkit-inline-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 0.94rem;
+    height: 1.875rem;
+}
+.footer__social__item{
+    color: #CCCCCC;
+    font-size: 1.5rem;
+    margin: 0.19rem 0.94rem;
+}
+.footer__social__item:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.address {
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.address__link {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.75rem;
+    font-family: OpenSans, sans-serif;
+}
+.section__modern{
+    height: 40rem;
+    background: #000000 url(../img/image.png) center center no-repeat;
+    background-size: auto;
+}
+.modern__left-part, .modern__right-part {
+    width: 50%;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+.modern__left-part__logo {
+    margin-top: 6.875rem;
+}
+.modern__left-part__title {
+    margin-top: 2.188rem;
+    margin-bottom: 2.5rem;
+}
+.modern__left-part__title__h1{
+    color: #FFFFFF;
+    font-family: Raleway, sans-serif;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+.modern__left-part__divider{
+    height: 0.125rem;
+    width: 4rem;
+    background-color: #FFFFFF;
+}
+.modern__left-part__text{
+    margin-top: 2.5rem;
+    margin-bottom: 2.81rem;
+}
+.modern__left-part__text__p{
+    color: #FFFFFF;
+    font-family: Raleway-Light, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.modern__left-part__download__button{
+    border: #FFFFFF solid 0.125rem;
+    width: 8.4375rem;
+    height: 2.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-family: OpenSans, sans-serif;
+    padding: 0.9375rem 2.0625rem;
+}
+.modern__left-part__download__button:hover{
+    border-color: #C2C2C2;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    color: rgba(110, 110, 110, 0.94);
+}
+.modern__right-part{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.modern__right-part__form-window{
+    width: 22.5rem;
+    height: 22.625rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 2rem;
+    margin-top: 25%;
+}
+.modern__right-part__form-window__caption{
+    height: 3.375rem;
+    background-color: #F5F5F5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.modern__right-part__form-window__caption__title {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1.25rem;
+    line-height: 3.375rem;
+}
+.caption--orange-color {
+    color: #FF8B38;
+}
+.caption--text-upper {
+    text-transform: uppercase;
+}
+.modern__right-part__form-window__body{
+    height: 15.8125rem;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.field__input {
+    width: 17.75rem;
+    height: 1.875rem;
+    font-family: OpenSans, sans-serif;
+    font-size: 0.875rem;
+    padding-left: 0.75rem;
+    border-bottom-color: #F6F6F6;
+    border-left-color: #fbfbfb0d;
+    border-right-color: #FBFBFB;
+    border-top: none;
+    background-color: transparent;
+}
+.field__input::placeholder {
+    color: #BDBDBD;
+}
+.modern__right-part__form-window__footer{
+    height: 3.4375rem;
+    text-align: center;
+}
+.modern__right-part__form-window__footer__button {
+    background-color: #FF8B38;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: OpenSans, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 3.4375rem;
+    padding: 1.14rem 8.7695rem;
+}
+.modern__right-part__form-window__footer__button:hover {
+    background-color: #ff5a30;
+    opacity: 0.8;
+}
+.bg_blue{
+    background-color: blue;
+}
