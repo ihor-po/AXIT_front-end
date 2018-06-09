@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Studio</title>
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="libs/bootsrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <!--<link href="css/fa-brands.css" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
 </head>
 <body>
-<div class="container">
-
+<div class="main-container">
     <header class="header">
-        <div class="center-part center-part_space-between">
+        <div class="center-part center-part_space-between flex-sc-column">
             <div class="header__logo">
                 <a href="index.html">
                     <img class="header__logo__img" src="img/logo.png">
                 </a>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu header__menu--display-none">
                 <div class="header__menu__item">
                     <a class="header__menu__item__link" href="#">Features</a>
                 </div>
@@ -37,6 +35,9 @@
                     <a class="header__menu__item__link" href="#">Contact</a>
                 </div>
             </nav>
+            <div class="humburger">
+                <img src="img/menu.png" id="humburger">
+            </div>
         </div>
     </header>
     <main>
@@ -85,9 +86,150 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <section>
+        <section class="try-it">
+            <div class="center-part center-part_center">
+                <div class="try-it__form-window">
+                    <div class="try-it__form-window__caption">
+                        <h2 class="modern__right-part__form-window__caption__title">Try Your <span class="caption--orange-color caption--text-upper">free</span> Trial Today</h2>
+                    </div>
+                    <div class="try-it__form-window__body">
+                        <div class="modern__right-part__form-window__body__field">
+                            <input type="text" class="field__input" name="Name" id="ti_Name" placeholder="Name">
+                        </div>
+                        <div class="try-it__form-window__body__field">
+                            <input type="email" class="field__input" name="Email" id="ti_Email" placeholder="Email">
+                        </div>
+                        <div class="try-it__form-window__body__field">
+                            <input type="password" class="field__input" name="Password" id="ti_Password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="try-it__form-window__footer">
+                        <a class="try-it__form-window__footer__button" href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social-media">
+            <div class="center-part center-part_center center-part_row">
+                <article class="social-media__article">
+                    <header class="social-media__article__header">
+                        <h3>Social Media</h3>
+                    </header>
+                    <p class="social-media__article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><wbr>
+                    At dignissimos dolor enim harum inventore...<wbr>
+                    </p>
+                </article>
+                <div class="social-media__links">
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://plus.google.com/" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://ru.pinterest.com/" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://www.instagram.com/?hl=ru" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://www.stumbleupon.com/" target="_blank">
+                            <i class="fab fa-stumbleupon"></i>
+                        </a>
+                    </div>
+                    <div class="social-media__links__item">
+                        <a class="social-media__links__item__link" href="https://ru.wikipedia.org/wiki/RSS" target="_blank">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tabs bg--f5">
+            <div class="center-part center-part_center center-part_vertical-center center-part--flow-column">
+                <div class="tabs__left-part">
+                    <div class="nav flex-column nav-pills nav--vertical-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link tabs__left-part__nav-link active top-borderradius5" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Tab 1</a>
+                        <a class="nav-link tabs__left-part__nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tab 2<wbr></a>
+                        <a class="nav-link tabs__left-part__nav-link border-none bottom-borderradius5" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Tab 3<wbr></a>
+                    </div>
+                    <div class="tab-content nav--vertical-center" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <article class="tab-content__article">
+                                <header class="tab-content__article__header">
+                                    <h3>Tabs with soft transitioning effect</h3>
+                                </header>
+                                <p class="tab-content__article__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolorem, voluptatum?
+                                    Facere magnam omnis quo! Aliquam consequatur doloribus expedita ipsa necessitatibus
+                                    numquam officiis quibusdam quisquam quod recusandae, rem, sed voluptatum.
+                                </p>
+                                <p class="tab-content__article__text tab-content__article__text--top19">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Architecto corporis dicta libero magni natus, officiis omnis?
+                                </p>
+                                <a class="tab-content__article__button" href="#">Download</a>
+                            </article>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <article class="tab-content__article">
+                                <header class="tab-content__article__header">
+                                    <h3>Tabs with soft transitioning effect</h3>
+                                </header>
+                                <p class="tab-content__article__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolorem, voluptatum?
+                                    Facere magnam omnis quo! Aliquam consequatur doloribus expedita ipsa necessitatibus
+                                    numquam officiis quibusdam quisquam quod recusandae, rem, sed voluptatum.
+                                </p>
+                                <p class="tab-content__article__text tab-content__article__text--top19">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Architecto corporis dicta libero magni natus, officiis omnis?
+                                </p>
+                                <a class="tab-content__article__button" href="#">Download</a>
+                            </article>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <article class="tab-content__article">
+                                <header class="tab-content__article__header">
+                                    <h3>Tabs with soft transitioning effect</h3>
+                                </header>
+                                <p class="tab-content__article__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolorem, voluptatum?
+                                    Facere magnam omnis quo! Aliquam consequatur doloribus expedita ipsa necessitatibus
+                                    numquam officiis quibusdam quisquam quod recusandae, rem, sed voluptatum.
+                                </p>
+                                <p class="tab-content__article__text tab-content__article__text--top19">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Architecto corporis dicta libero magni natus, officiis omnis?
+                                </p>
+                                <a class="tab-content__article__button" href="#">Download</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__right-part">
+                    <div>
+                    <img src="img/mirrow_town.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sub-list">
 
         </section>
     </main>
@@ -95,25 +237,39 @@
         <div class="center-part center-part_column center-part_center">
             <div class="footer__social">
                 <div class="footer__social__item">
-                    <i class="fab fa-facebook-f"></i>
+                    <a class="footer__social__item__link" href="https://facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fab fa-twitter"></i>
+                    <a class="footer__social__item__link" href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fab fa-google-plus-g"></i>
+                    <a class="footer__social__item__link" href="https://plus.google.com/" target="_blank">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fab fa-pinterest"></i>
+                    <a class="footer__social__item__link" href="https://ru.pinterest.com/" target="_blank">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fab fa-instagram"></i>
+                    <a class="footer__social__item__link" href="https://www.instagram.com/?hl=ru" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fab fa-stumbleupon"></i>
+                    <a class="footer__social__item__link" href="https://www.stumbleupon.com/" target="_blank">
+                        <i class="fab fa-stumbleupon"></i>
+                    </a>
                 </div>
                 <div class="footer__social__item">
-                    <i class="fas fa-rss"></i>
+                    <a class="footer__social__item__link" href="https://ru.wikipedia.org/wiki/RSS" target="_blank">
+                        <i class="fas fa-rss"></i>
+                    </a>
                 </div>
             </div>
             <address class="address">
@@ -121,6 +277,9 @@
             </address>
         </div>
     </footer>
+        <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+        <script src="libs/bootsrap/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
 
 </div>
 </body>
